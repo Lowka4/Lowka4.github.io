@@ -192,7 +192,7 @@ a{text-decoration: none; color:black;  font-size: 34px;  font-weight:400; outlin
 
 
 #онас{position:absolute;left:150px;}
-#boxText{position:absolute; top:140px; left:150px; height: 300px; width:1000px; border:1px solid black; padding: 10px;}
+#boxText{position:absolute; top:140px; left:150px; height: 300px; text-indent:20px; width:1000px; font-size: 22px;}
 #footerко{position:absolute; left:0px; top:581px; width:101%}
 #footerbook2{position:absolute; left:510px; top:601px; width: 40px;}
 #footersup2{position:absolute; left:150px; top:595px; width: 40px;}
