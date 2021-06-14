@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta charset="UTF-8">
+  <title>Пиццерия</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script defer src="https://lk.easynetshop.ru/frontend/v5/ens-0e030496.js"></script>
+  <link href="https://lk.easynetshop.ru/frontend/v5/ens-0e030496.css" rel="stylesheet">
+  <style>
+    #enscart_wrapper {
+      top: auto;
+      bottom: 30px;
+
+      right: 20px;
+      left: auto;
+    }
+  </style>
+
+<body style='overflow-x:hidden;'></body>
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script type="text/javascript">
+  document.addEventListener("EasyNetShopModalOpened", function (event) {
+    if ((ens_jQuery(".easynetshop-modal-addtocart").css('display') != 'none')) { hideEasynetshopModals(); }
+  }, false);
+</script>
+
+<script>
+  document.addEventListener("EasyNetShopModalOpened", function (event) {
+    ens_jQuery(function () {
+      ens_jQuery('input[name="phone"]').mask('+7(000)000-00-00');
+    });
+  }, false);
+</script>
+<style>
+  .powered {
+    display: none
+  }
+</style>
+
+<script>
+  document.addEventListener("EasyNetShopModalOpened", function (event) {
+    ens_jQuery(".fields_number1").detach().clone(true).appendTo(".easynetshop-form-group");
+    ens_jQuery(".fields_number3").detach().clone(true).appendTo(".easynetshop-form-group");
+    ens_jQuery(".fields_number2").detach().clone(true).appendTo(".easynetshop-form-group");
+  }, false);
+</script>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="header_inner">
+      <div class="header__logo-wrapper">
+        <img id="logo" src="img/Лого.jpg">
+        <a id="pizza" href="#piz">Пицца</a>
+        <a id="drinks" href="#drink">Напитки</a>
+        <a id="contacts" href="Контакты/КонтактыУльяновск.html">Контакты</a>
+        <a id="aboutus" href="О нас.html">О нас</a>
+      </div>
+    </div>
+  </header>
+
+  <h2 id="piz" name="piz">Пицца</h2>
+  <img id="i1" src="img/Пепперони.jpg">
+  <h2 id="ii1">Пеперони</h2>
+  <h3 id="iii1" class="box">Пепперони, моцарелла</h3>
+  <h4 id="priceb1">От 300 ₽</h4>
+  <select class="ens-select" id="b1">
+    <option class="ens-select-default">Добавить</option>
+    <option data-rel="0e030496259193">20см - 300₽</option>
+    <option data-rel="0e030496249283">25см - 320₽</option>
+    <option data-rel="0e030496249283">30см - 340₽</option>
+  </select>
+
+  <img id="i2" src="img/Песто.jpg">
+  <h2 id="ii2">Песто</h2>
+  <h3 id="iii2" class="box">Помидоры, пармезан и моцарелла, соус томатный, каперсы, орегано сушёный</h3>
+  <h4 id="priceb2">От 300 ₽</h4>
+  <select class="ens-select" id="b2">
+    <option class="ens-select-default">Добавить</option>
+    <option data-rel="0e030496259196">20см - 300₽</option>
+    <option data-rel="0e030496259197">25см - 320₽</option>
+    <option data-rel="0e030496259198">30см - 340₽</option>
+  </select>
+
+  <img id="i3" src="img/Мексиканская.jpg">
+  <h2 id="ii3">Мексиканская</h2>
+  <h3 id="iii3" class="box">Салями, перец чили, соус чили, томаты, моцарелла, кукуруза, каперсы</h3>
+  <h4 id="priceb3">От 300 ₽</h4>
+  <select class="ens-select" id="b3">
+    <option class="ens-select-default">Добавить</option>
+    <option data-rel="0e030496259199">20см - 300₽</option>
+    <option data-rel="0e030496259200">25см - 320₽</option>
+    <option data-rel="0e030496259201">30см - 340₽</option>
+  </select>
+
+  <img id="i4" src="img/Ветчина и грибы.jpg">
+  <h2 id="ii4">Ветчина и грибы</h2>
+  <h3 id="iii4" class="box">Ветчина, грибы, моцарелла, томатный соус</h3>
+  <h4 id="priceb4">От 300 ₽</h4>
+  <select class="ens-select" id="b4">
+    <option class="ens-select-default">Добавить</option>
+    <option data-rel="0e030496259202">20см - 300₽</option>
+    <option data-rel="0e030496259203">25см - 320₽</option>
+    <option data-rel="0e030496259204">30см - 340₽</option>
+  </select>
+
+  <img id="i5" src="img/Карбонара.jpg">
+  <h2 id="ii5">Карбонара</h2>
+  <h3 id="iii5" class="box">Бекон, пармезан, моцарелла, томаты черри</h3>
+  <h4 id="priceb5">От 320 ₽</h4>
+  <select class="ens-select" id="b5">
+    <option class="ens-select-default">Добавить</option>
+    <option data-rel="0e030496259205">20см - 320₽</option>
+    <option data-rel="0e030496259206">25см - 340₽</option>
+    <option data-rel="0e030496259207">30см - 360₽</option>
+  </select>
+
+  <img id="i6" src="img/Гавайская.jpg">
+  <h2 id="ii6">Гавайская</h2>
+  <h3 id="iii6" class="box">Цыпленок, ананасы, моцарелла, томатный соус</h3>
+  <h4 id="priceb6">От 320 ₽</h4>
+  <select class="ens-select" id="b6">
+    <option class="ens-select-default">Добавить</option>
+    <option data-rel="0e030496259208">20см - 320₽</option>
+    <option data-rel="0e030496259209">25см - 340₽</option>
+    <option data-rel="0e030496259210">30см - 360₽</option>
+  </select>
+
+  <img id="i7" src="img/Маргарита.jpg">
+  <h2 id="ii7">Маргарита</h2>
+  <h3 id="iii7" class="box">Моцарелла, томаты, итальянские травы, томатный соус</h3>
+  <h4 id="priceb7">От 320 ₽</h4>
+  <select class="ens-select" id="b7">
+    <option class="ens-select-default">Добавить</option>
+    <option data-rel="0e030496259211">20см - 320₽</option>
+    <option data-rel="0e030496259212">25см - 340₽</option>
+    <option data-rel="0e030496259213">30см - 360₽</option>
+  </select>
+
+  <h2 id="drink" name="drink">Напитки</h2>
+  <img id="p1" src="img/Cola.jpg">
+  <h2 id="pp1">Coca-Cola</h2>
+  <h3 id="ppp1" class="box"></h3>
+  <h4 id="priced1">От 80 ₽</h4>
+  <select class="ens-select" id="d1">
+    <option class="ens-select-default">Добавить</option>
+    <option data-rel="0e030496259214">0,5 - 80₽</option>
+    <option data-rel="0e030496259215">1л - 150₽</option>
+  </select>
+
+  <img id="p2" src="img/Cola Vanilla.jpg">
+  <h2 id="pp2">Coca-Cola Vanilla</h2>
+  <h3 id="ppp2" class="box"></h3>
+  <h4 id="priced2">От 80 ₽</h4>
+  <select class="ens-select" id="d2">
+    <option class="ens-select-default">Добавить</option>
+    <option data-rel="0e030496259216">0,5 - 80₽</option>
+    <option data-rel="0e030496259217">1л - 150₽</option>
+  </select>
+
+  <img id="p3" src="img/Cola Zero.jpg">
+  <h2 id="pp3">Coca-Cola Zero</h2>
+  <h3 id="ppp3" class="box"></h3>
+  <h4 id="priced3">От 80 ₽</h4>
+  <select class="ens-select" id="d3">
+    <option class="ens-select-default">Добавить</option>
+    <option data-rel="0e030496259218">0,5 - 80₽</option>
+    <option data-rel="0e030496259219	">1л - 150₽</option>
+  </select>
+
+  <img id="p4" src="img/Cola Orange.jpg">
+  <h2 id="pp4">Coca-Cola Orange</h2>
+  <h3 id="ppp4" class="box"></h3>
+  <h4 id="priced4">От 80 ₽</h4>
+  <select class="ens-select" id="d4">
+    <option class="ens-select-default">Добавить</option>
+    <option data-rel="0e030496259220">0,5 - 80₽</option>
+    <option data-rel="0e030496259221">1л - 150₽</option>
+  </select>
+
+  <img id="p5" src="img/Sprite.jpg">
+  <h2 id="pp5">Sprite</h2>
+  <h3 id="ppp5" class="box"></h3>
+  <h4 id="priced5">От 80 ₽</h4>
+  <select class="ens-select" id="d5">
+    <option class="ens-select-default">Добавить</option>
+    <option data-rel="0e030496259222">0,5 - 80₽</option>
+    <option data-rel=0e030496259223 ">1л - 150₽</option>
+  </select>
+
+  <img id="p6" src="img/Fanta.jpg">
+  <h2 id="pp6">Fanta</h2>
+  <h3 id="ppp6" class="box"></h3>
+  <h4 id="priced6">От 80 ₽</h4>
+  <select class="ens-select" id="d6">
+    <option class="ens-select-default">Добавить</option>
+    <option data-rel="0e030496259224">0,5 - 80₽</option>
+    <option data-rel="0e030496259225">1л - 150₽</option>
+  </select>
+
+  <img id="p7" src="img/Rich Апельсин.jpg">
+  <h2 id="pp7">Rich Апельсин</h2>
+  <h3 id="ppp7" class="box"></h3>
+  <h4 id="priced7">140 ₽</h4>
+  <select class="ens-select" id="d7">
+    <option class="ens-select-default">Добавить</option>
+    <option data-rel="0e030496249403">1л - 140₽</option>
+  </select>
+
+  <img id="p8" src="img/Rich Вишня.jpg">
+  <h2 id="pp8">Rich Вишня</h2>
+  <h3 id="ppp8" class="box"></h3>
+  <h4 id="priced8">140 ₽</h4>
+  <select class="ens-select" id="d8">
+    <option class="ens-select-default">Добавить</option>
+    <option data-rel="0e030496249404">1л - 140₽</option>
+  </select>
+
+  <img id="p9" src="img/Rich Яблоко.jpg">
+  <h2 id="pp9">Rich Яблоко</h2>
+  <h3 id="ppp9" class="box"></h3>
+  <h4 id="priced9">140 ₽</h4>
+  <select class="ens-select" id="d9">
+    <option class="ens-select-default">Добавить</option>
+    <option data-rel="0e030496249405">1л - 140₽</option>
+  </select>
+
+
+  <img id="footer" src="img/Футер.jpg">
+  <a href="mailto:roman.pogodin.200.1@gmail.com">
+    <h2 id="footer1">Тех. поддержка</h2>
+  </a>
+  <a href="https://docs.google.com/document/d/1MiNTBGxdJYUQyJvLzsBo9fu3EobufCPA/edit?rtpof=true">
+    <h2 id="footer2">Посмотреть состав</h2>
+  </a>
+  <img id="footerbook" src="img/Книга.png">
+  <img id="footersup" src="img/Тех.поддержка.jpg">
+  <h2 id="footer3">Наша группа в:</h2>
+  <a href="https://vk.com/public205175135"><img id="footervk" src="img/vk.jpg"></a>
+</body>
+</html>
+<script>
+  document.addEventListener("EasyNetShopModalOpened", function (event) {
+    if ((ens_jQuery(".easynetshop-modal-ordercompleate .easynetshop-ok .easynetshop-continue").css('display') != 'none') && (ens_jQuery(".easynetshop-modal-ordercompleate").css('display') != 'none')) {
+      window.location.href = "https://lowka4.github.io/Благодарность.html";
+    }
+  }, false);
+</script>

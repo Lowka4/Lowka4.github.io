@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> <meta charset="UTF-8">
+    <title>Контакты</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../scripts.js"></script>
+      <body style='overflow-x:hidden;'></body> 
+      <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header_inner">
+      <div class="header__logo-wrapper">
+        <img id="logo" src="../img/Лого.jpg"> 
+        <a id="pizza" href="../index.html">Пицца</a>
+        <a id="drinks" href="../index.html">Напитки</a>
+        <a id="contacts" href="КонтактыДимитровград.html">Контакты</a>
+        <a id="aboutus" href="../О нас.html">О нас</a>
+      </div>
+    </div>
+  </header>
+  <h2 id="selectsity">Выберите город:</h2>
+  <select id="sity" class="form-select" aria-label="Default select example" name="sity" onchange="window.location.href = this.options[this.selectedIndex].value"">
+    <option value="КонтактыДимитровград.html">Димитровград</option>
+    <option value="КонтактыУльяновск.html">Ульяновск</option>   
+</select>
+<h2 id="phone">Телефон: 8927272255</h2>
+<h2 id="email">E-mail: **********@mail.com</h2>
+<table id="таблица" cellpadding="12" rules="all">
+  <tr>
+  <th>№</th>
+  <th>Адрес</th>
+  <th>Время работы</th>
+  <th>Время доставки</th>
+  <th>Карта</th>
+  </tr>
+  <tr>
+  <td>1</td>
+  <td>В разработке!!!</td>
+  <td></td>
+  <td></td>
+  <td><button id="ккарта"><a id="карта" href="https://yandex.ru/maps/?um=constructor%3Ac552ade1efee58cef8a515ef638380a449e60abbb6ee14c836ee8a7c8133ec7c&source=constructorLink">Показать</a></button></td>
+ </tr>
+ </table>
+ 
+ <img id="footerо" src="../img/Футер.jpg">
+ <a href="mailto:roman.pogodin.200.1@gmail.com"><h2 id="footerо1">Тех. поддержка</h2></a>
+ <a href="https://docs.google.com/document/d/1MiNTBGxdJYUQyJvLzsBo9fu3EobufCPA/edit?rtpof=true"><h2 id="footerо2">Посмотреть состав</h2></a>
+ <img id="footerbook3" src="../img/Книга.png">
+ <img id="footersup3" src="../img/Тех.поддержка.jpg">
+ <h2 id="footerо3">Наша группа в:</h2>
+ <a href="https://vk.com/public205175135"><img id="footervk3" src="../img/vk.jpg" ></a>
+
+</body>
+</html>
